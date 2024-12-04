@@ -1,0 +1,126 @@
+/* General reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Counter container styling */
+.counter-container {
+  background: rgb(185, 220, 232);
+  border: 1px solid #c4c2c2;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Heading styling */
+.counter-container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Count display styling */
+#count-element {
+  font-size: 3rem;
+  color: #007bff;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* General button styling */
+button {
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2); /* Consistent shadow for depth */
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  margin: 5px;
+}
+
+/* Hover and active states for all buttons */
+button:hover {
+  filter: brightness(1.1);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific button colors */
+#add-btn {
+  background-color: #28a745; /* Green */
+}
+
+#subtract-btn {
+  background-color: #dc3545; /* Red */
+}
+
+#save-btn {
+  background-color: #ffc107; /* Yellow */
+  color: #333; /* Darker text for contrast */
+}
+
+/* Saved entries text styling */
+#previous-count {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  background-color: #f1f1f1; /* Light background for contrast */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .counter-container {
+    padding: 15px;
+  }
+
+  #count-element {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  #previous-count {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .counter-container h1 {
+    font-size: 1.8rem;
+  }
+
+  #count-element {
+    font-size: 2rem;
+  }
+
+  #previous-count {
+    font-size: 0.8rem;
+  }
+}
