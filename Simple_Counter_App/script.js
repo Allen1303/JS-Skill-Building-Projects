@@ -15,12 +15,12 @@ let counter = 0;
 
 //Function declaration syntax
 function addCount() {
-  counter += 1;
+  counter ++;
   countEl.textContent = counter;
 }
 //function Expression syntax
 const subtractCount = function () {
-  counter -= 1;
+  counter --;
   countEl.textContent = counter;
 };
 //Arrow Function syntax
