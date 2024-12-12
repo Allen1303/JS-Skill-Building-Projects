@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="counter-container">
-        <h1>Counter:</h1>
-        <p id="count-element">0</p>
-        <button id="add-btn">+</button>
-        <button id="subtract-btn">-</button>
-        <button id="save-btn">Save Count</button>
-        <p id="previous-count">Saved Entries:</p>
-    </div>
+    <main>
+        <div class="counter-container">
+            <h1>Counter:</h1>
+            <p id="count-element">0</p>
+            <button data-add-count ="add" id="add-btn">+</button>
+            <button data-subtract-count ="subtract" id="subtract-btn">-</button>
+            <button data-save-count ="save" id="save-btn">Save Count</button>
+            <p id="previous-count">Saved Entries:</p>
+        </div>
+    </main>
+    
 
     <script src="script.js"></script>
 </body>
